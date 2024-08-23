@@ -134,6 +134,17 @@ gap: 0.625rem;
 }
 
 
+
+/* Navbar Mobile */
+
+@media (max-width: 430px) {
+    .navbar {
+        margin: 1rem 2rem;
+    }
+}
+
+
+
 /* Header */
 
 .header {
