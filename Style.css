@@ -1308,6 +1308,10 @@ font-family: poppins, sans-serif;
     .test-2 {
         display: none;
     }
+
+    .container {
+        margin-bottom: 0;
+    }
     
 }
 
