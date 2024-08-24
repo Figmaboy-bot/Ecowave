@@ -1064,6 +1064,11 @@ font-family: poppins, sans-serif;
         gap: 1rem;
         margin-top: 1rem;
     }
+
+    .learn-more {
+        padding: 0.6rem 1rem;
+        margin: 0;
+    }
     
     .project-tag {
         padding: 0.6rem 1rem;
@@ -1203,8 +1208,6 @@ font-family: poppins, sans-serif;
 @media (max-width: 728px) {
     .testimonials {
         margin-top: 4rem;
-        padding-left: 2rem;
-       padding: 2rem;
         
     }
     
