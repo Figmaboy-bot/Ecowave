@@ -1203,8 +1203,8 @@ font-family: poppins, sans-serif;
 @media (max-width: 728px) {
     .testimonials {
         margin-top: 4rem;
-        margin-left: 2rem;
-       margin-right: 2rem;
+        padding-left: 2rem;
+       padding: 2rem;
         
     }
     
@@ -1290,6 +1290,16 @@ font-family: poppins, sans-serif;
 
     .ratings {
         font-size: 1rem;
+    }
+
+    .test-2 {
+        display: none;
+    }
+
+    .test, .test-2 {
+        display: flex;
+        gap: 1.2rem;
+        animation: none
     }
 
     .test-2 {
@@ -1392,6 +1402,17 @@ font-family: poppins, sans-serif;
     .ratings {
         font-size: 0.8rem;
     }
+
+    .test, .test-2 {
+        display: flex;
+        gap: 1.2rem;
+        animation: none
+    }
+
+    .test-2 {
+        display: none;
+    }
+    
     
 }
 
@@ -1635,11 +1656,17 @@ gap: 2rem;
         align-items: center;
     }
 
+    .footer {
+       width: 100%;
+    }
+
 }
 @media (max-width: 430px) {
 
     .footer {
         padding: 2.5rem 1.5rem;
+        width: 100%;
+        box-sizing: border-box;
     }
     
     .newsletter {
