@@ -12,25 +12,26 @@
     <link rel="icon" href="Media/Icon.svg">
 </head>
 <body>
-    
+
     <div class="navbar">
-        <div> <img src="Media/Logo.svg" alt="" class="logo"> <img src="Media/Icon.svg" alt="" class="icon"></div>
-
-        <div class="navlinks">
-            <ul class="navlink">About Us</ul>
-            <ul class="navlink">Solutions</ul>
-            <ul class="navlink">Projects</ul>
-            <ul class="navlink">Sustainability</ul>
-            <ul class="navlink">Contact Us</ul>
+        <div class="logo"><img src="Media/Logo.svg" alt="" class="logo"> <img src="Media/Icon.svg" alt="" class="icon"></div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Solutions</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Sustainability</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
         </div>
-
-
         <button class="navbutton">Get a Quote</button>
-
-        <div class="more">
-            <img src="Media/More.svg" alt="">
-        </div>
     </div>
+
+    
+
 
 
     <div class="header">
@@ -554,16 +555,22 @@
 
 </div>
 
-</body>
 <script>
-    document.querySelectorAll('.three-pics img').forEach(function(img) {
-    img.addEventListener('click', function() {
-        // Toggle the 'clicked' class on the parent container
-        document.querySelector('.three-pics').classList.toggle('clicked');
+    // script.js
+
+document.addEventListener("DOMContentLoaded", function () {
+    const hamburger = document.getElementById("hamburger");
+    const navLinks = document.getElementById("navLinks");
+
+    hamburger.addEventListener("click", function () {
+        navLinks.classList.toggle("active");
+        hamburger.classList.toggle("active");
     });
 });
 
 </script>
+
+</body>
 
 
 </html>
